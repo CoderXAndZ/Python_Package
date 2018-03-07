@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>rzjrapp.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>65837FB1B1F0EB85E686D9603124B711E9903495</string>
+				<key>dateExpires</key>
+				<string>2020/10/8</string>
+				<key>type</key>
+				<string>iOS Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>HKYG7W22CW.com.ios.rongtuoDevTestNew</string>
+				<key>aps-environment</key>
+				<string>production</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>HKYG7W22CW</string>
+				<key>com.apple.security.application-groups</key>
+				<array/>
+				<key>get-task-allow</key>
+				<false/>
+			</dict>
+			<key>name</key>
+			<string>rzjrapp.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>201842be-9065-410f-a19a-51de52277512</string>
+				<key>name</key>
+				<string>iOS Team Inhouse Provisioning Profile: com.ios.rongtuoDevTestNew</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>HKYG7W22CW</string>
+				<key>name</key>
+				<string>Shanghai Runrui Financial Service Co., Ltd.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
