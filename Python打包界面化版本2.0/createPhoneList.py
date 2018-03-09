@@ -15,7 +15,7 @@ def packPkg(excelFile, projectFile, outputPath, infoPlistPath):
     print("推荐人excel地址是", excelFile) #/Users/admin/Desktop/推荐人20180301.xlsx
     print("ipa包地址是", projectFile) #/Users/admin/ios/fmapp.xcodeproj
     print("IPA的输出地址是", outputPath) #/Users/admin/Desktop/生成的ipa包
-    print("infoPlistPath的输出地址是", infoPlistPath) #
+    print("infoPlistPath的输出地址是", infoPlistPath) # /Users/admin/ios/fmapp/registerPhone.plist
     # 读取表格
     excel_data = xlrd.open_workbook(excelFile)
     # 取出Excel的第一个sheet数据
@@ -52,6 +52,13 @@ def packPkg(excelFile, projectFile, outputPath, infoPlistPath):
     print ("读取的手机号列表是：", infoPlist)
     plist = readPlist(infoPlistPath)
     print ("修改之后的列表是：", plist)
+#    # 选择Xcode的版本打包
+#    identifier = "" # 标识符 iphoneos11.1
+#    if identifier == "iphoneos11.1":
+#        os.system("sudo xcode-select --switch /Users/admin/Downloads/Xcode.app/Contents/Developer/")
+#    else:
+#        os.system("sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer/")
+
     if len(idList) == lines:
         # 调用打包程序
         beginToPackage(projectFile, outputPath, idList)
