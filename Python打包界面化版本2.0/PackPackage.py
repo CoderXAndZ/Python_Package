@@ -61,7 +61,6 @@ def changeFileName(exportPath, outputPath, infoPath):
         print ("\n Root里面:\n",Root)
         writePlist(Root, pathMoved + "/app" + fileName + ".plist")
 
-
 # 项目路径，打包的输出路径，
 def beginToPackage(projectpath, outputPath, idList):
     print("======打包正式开始======")
