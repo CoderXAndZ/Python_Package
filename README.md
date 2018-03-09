@@ -14,3 +14,7 @@ Python打企业包：实现自动读取Excel表格中数据，动态往ipa的pli
 9、修改Xcode版本就行打包：这个得是基于电脑上有多个版本才可以，如果没有依旧不能实现；
 10、实现界面化的选择工程路径和ipa的输出路径
 
+注意：
+1>如果不在ExportOptions.plist中添加provisioningProfiles字典的话是没有办法打包成功的；
+2>如果上线版和企业版不是一个Team的话，当打企业包的时候，还是需要在Xcode上填写企业版的BundleID，选择企业版的Team才可以，否则打包不成功；
+

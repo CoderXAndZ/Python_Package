@@ -72,6 +72,7 @@ def beginToPackage(projectpath, outputPath, idList):
     archivePath = outputPath + "/" + scheme + ".xcarchive"
     # 编译后app中的info.plist文件路径
     infoPath = archivePath + "/Products/Applications/" + scheme + ".app/info.plist"
+    # xcodebuild archive -sdk iphoneos11.1 -project
     buildCommand = "xcodebuild archive -project " + projectpath + " -scheme " + scheme + " -archivePath " + archivePath
 
 #buildCommand = "xcodebuild -workspace "+projectpath+" -scheme " + scheme + " -configuration Release archive " \
@@ -79,7 +80,9 @@ def beginToPackage(projectpath, outputPath, idList):
 
     print("执行编译命令: " + buildCommand)
     output = os.system(buildCommand)
-
+    
+    if os.path.exists(outputPath + "/所有的ipa包"):
+        shutil.rmtree(outputPath + "/所有的ipa包") #删除文件夹和文件夹里面的内容
     # 将所有的ipa包移动到统一的文件夹
     os.makedirs(outputPath + "/所有的ipa包")
 ##  changeFileName("/Users/admin/Desktop/生成的ipa包/111", "/Users/admin/Desktop/生成的ipa包","/Users/admin/Desktop/生成的ipa包/111/Payload/rzjrapp.app/Info.plist")
