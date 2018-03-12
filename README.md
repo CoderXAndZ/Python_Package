@@ -13,6 +13,8 @@ Python打企业包：实现自动读取Excel表格中数据，动态往ipa的pli
 8、在ipa同一存放的文件夹中创建每一个ipa对应的plist文件；
 9、修改Xcode版本就行打包：这个得是基于电脑上有多个版本才可以，如果没有依旧不能实现；
 10、实现界面化的选择工程路径和ipa的输出路径
+11、输出路径可以不选择，如果不选择，默认在桌面创建“生成的ipa包”文件夹存放打包好的ipa包和对应的plist；
+12、自动在存放ipa包的文件夹创建DistributionSummary.plist和ExportOptions.plist；
 
 注意：
 1>如果不在ExportOptions.plist中添加provisioningProfiles字典的话是没有办法打包成功的；
