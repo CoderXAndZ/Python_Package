@@ -67,7 +67,7 @@ def beginToPackage(projectpath, outputPath, idList):
     # 项目记时开始
     time_start=time.time()
 # 编译命令
-# xcodebuild archive -project /Users/admin/iosfmapp.xcodeproj -scheme rzjrapp -archivePath /Users/admin/Desktop/生成的ipa包/rzjrapp.xcarchive
+# xcodebuild archive -project /Users/admin/ios/fmapp.xcodeproj -scheme rzjrapp -archivePath /Users/admin/Desktop/生成的ipa包/rzjrapp.xcarchive
     archivePath = outputPath + "/" + scheme + ".xcarchive"
     # 编译后app中的info.plist文件路径
     infoPath = archivePath + "/Products/Applications/" + scheme + ".app/info.plist"
