@@ -15,6 +15,7 @@ Python打企业包：实现自动读取Excel表格中数据，动态往ipa的pli
 10、实现界面化的选择工程路径和ipa的输出路径
 11、输出路径可以不选择，如果不选择，默认在桌面创建“生成的ipa包”文件夹存放打包好的ipa包和对应的plist；
 12、自动在存放ipa包的文件夹创建DistributionSummary.plist和ExportOptions.plist；
+13、打包好的可执行文件在dist文件夹中，如果iMac系统的版本相同，应该是可以直接执行的，但是要确保描述文件是存在的；
 
 注意：
 1>如果不在ExportOptions.plist中添加provisioningProfiles字典的话是没有办法打包成功的；
