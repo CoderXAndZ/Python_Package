@@ -29,12 +29,14 @@ def createPlist(outputPath):
     architectures = ["armv7","arm64"]
     # 创建 certificate 字典
 #    certificate = {"SHA1":"65837FB1B1F0EB85E686D9603124B711E9903495","dateExpires":"2020/10/8","type":"iOS Distribution"}
+
+# CD630D0CB53C90679599F58C66CD52261BBCDB7E
     certificate = {"SHA1":"7946EE36C749575B27C31120C59191FE88061258","dateExpires":"2018/11/26","type":"iOS Distribution"}
     # 创建 entitlements 字典
     entitlements = {"application-identifier":"HKYG7W22CW.com.ios.rongtuoDevTestNew","aps-environment":"production","com.apple.developer.team-identifier":"HKYG7W22CW","com.apple.security.application-groups":[],"get-task-allow":False}
     # com.apple.security.application-groups:App Groups 数组
-    # 创建 profile 字典
-    profile  = {"UUID":"201842be-9065-410f-a19a-51de52277512","name":"iOS Team Inhouse Provisioning Profile: com.ios.rongtuoDevTestNew"}
+    # 创建 profile 字典 "UUID":"201842be-9065-410f-a19a-51de52277512"
+    profile  = {"UUID":"e322a7d8-bd8e-4516-b64a-c7695de6bde6","name":"com.ios.rongtuoDevTestNew"}
     # 创建 team 字典
     team = {"id":"HKYG7W22CW","name":"Shanghai Runrui Financial Service Co., Ltd."}
     summaryDict = {"architectures":architectures,"certificate":certificate,"entitlements":entitlements,"name":"rzjrapp.app","profile":profile,"team":team}
@@ -45,9 +47,14 @@ def createPlist(outputPath):
     
     # 在输出路径中创建ExportOptions.plist
     provisioningProfiles = {"com.ios.rongtuoDevTestNew":"com.ios.rongtuoDevTestNew"}
-    exportOptionsRoot = {"provisioningProfiles":provisioningProfiles,"compileBitcode": False,"method":"enterprise","signingStyle":"automatic","stripSwiftSymbols":True,"teamID":"HKYG7W22CW","thinning":"<none>"}
-    writePlist(exportOptionsRoot, outputPath + "/ExportOptions.plist")
+#    ,"rzjrapp.ipa":summary
 
+#    applicationIdentifierPrefixes = ["HKYG7W22CW"]
+#    provisioningProfiles = {"com.ios.rongtuoDevTestNew":"com.ios.rongtuoDevTestNew","profile":profile,"teamIdentifierPrefixes":applicationIdentifierPrefixes,"entitlements":entitlements,"appIdentifierName":"rongtuoDevTestNew","applicationIdentifierPrefixes":applicationIdentifierPrefixes,"dateCreated":"2018-03-06 09:08:28 +0000","dateExpired":"2018-11-26 00:50:42 +0000","certificateKind":"1.2.840.113635.100.6.1.4","certificateSHA1Hashes":{"SHA1":"7946EE36C749575B27C31120C59191FE88061258"},"supportedUDIDs":{"UUID":"201842be-9065-410f-a19a-51de52277512"},"isXcodeManaged":"1","isXcodeManaged":"0"}
+    exportOptionsRoot = {"provisioningProfiles":provisioningProfiles,"compileBitcode": False,"method":"enterprise","signingStyle":"automatic","stripSwiftSymbols":True,"teamID":"HKYG7W22CW","thinning":"<none>"}
+#    exportOptionsRoot = {"compileBitcode": False,"method":"enterprise","signingStyle":"automatic","stripSwiftSymbols":True,"teamID":"HKYG7W22CW","thinning":"<none>"}
+    writePlist(exportOptionsRoot, outputPath + "/ExportOptions.plist")
+    print("\n provisioningProfiles是:", exportOptionsRoot)
     return outputPath
 
 # 获取推荐人 userid: excel路径，工程路径，输出路径
@@ -99,9 +106,9 @@ def packPkg(excelFile, projectFile, outputPath, infoPlistPath):
 #    # 选择Xcode的版本打包
 #    identifier = "" # 标识符 iphoneos11.1
 #    if identifier == "iphoneos11.1": # Xcode9.1
-#        os.system("sudo xcode-select --switch /Users/admin/Downloads/Xcode.app/Contents/Developer/")
+#    os.system("sudo xcode-select --switch /Users/admin/Downloads/Xcode.app/Contents/Developer/")
 #    else:
-#        os.system("sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer/")
+#    os.system("sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer/")
 
     if len(idList) == lines:
         # 调用打包程序

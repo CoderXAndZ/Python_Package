@@ -28,8 +28,8 @@ def createPlist(outputPath):
     # 创建 architectures 数组
     architectures = ["armv7","arm64"]
     # 创建 certificate 字典
-    certificate = {"SHA1":"65837FB1B1F0EB85E686D9603124B711E9903495","dateExpires":"2020/10/8","type":"iOS Distribution"}
-#    certificate = {"SHA1":"7946EE36C749575B27C31120C59191FE88061258","dateExpires":"2018/11/26","type":"iOS Distribution"}
+#    certificate = {"SHA1":"65837FB1B1F0EB85E686D9603124B711E9903495","dateExpires":"2020/10/8","type":"iOS Distribution"}
+    certificate = {"SHA1":"7946EE36C749575B27C31120C59191FE88061258","dateExpires":"2018/11/26","type":"iOS Distribution"}
     # 创建 entitlements 字典
     entitlements = {"application-identifier":"HKYG7W22CW.com.ios.rongtuoDevTestNew","aps-environment":"production","com.apple.developer.team-identifier":"HKYG7W22CW","com.apple.security.application-groups":[],"get-task-allow":False}
     # com.apple.security.application-groups:App Groups 数组
