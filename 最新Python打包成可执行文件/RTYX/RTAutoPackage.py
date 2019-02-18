@@ -16,7 +16,7 @@ def archive_project(project_path, configuration, password, method):
     # 获取用户的家目录
     home_path = os.path.expanduser("~")
 
-    ipa_output_path = home_path + "/Desktop/RTYX ipa"  # ipa 包的输出路径
+    ipa_output_path = home_path + "/Desktop/RTYXipa"  # ipa 包的输出路径
     if os.path.exists(ipa_output_path):
         shutil.rmtree(ipa_output_path)  # 删除文件夹和文件夹里面的内容
     # 创建
