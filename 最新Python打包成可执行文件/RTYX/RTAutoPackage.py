@@ -16,7 +16,7 @@ def archive_project(project_path, configuration, password, method):
     # 获取用户的家目录
     home_path = os.path.expanduser("~")
 
-    ipa_output_path = home_path + "/Desktop/ipa"  # ipa 包的输出路径
+    ipa_output_path = home_path + "/Desktop/RTYX ipa"  # ipa 包的输出路径
     if os.path.exists(ipa_output_path):
         shutil.rmtree(ipa_output_path)  # 删除文件夹和文件夹里面的内容
     # 创建
@@ -36,6 +36,7 @@ def archive_project(project_path, configuration, password, method):
     print("ipa_path:", ipa_path)
     print("ExportOptionsPlistPath:", export_options_plist_path, "CONFIGURATION:", configuration, "password:", password)
 
+    # 创建 ExportOptions.plist 文件
     create_export_options_plist(method, export_options_plist_path)
 
     print("================= 修改 bundle indentifier =================")
@@ -97,6 +98,7 @@ def archive_project(project_path, configuration, password, method):
         print('================= 打包失败 =================')
 
 
+# 创建 ExportOptions.plist 文件
 def create_export_options_plist(method, plist_path):
     print("method：", method)
 
@@ -141,13 +143,14 @@ def change_bundle_identifier(project_file, scheme, bundle_identifier):
     # Set :CFBundleIdentifier com.rtyx.RTYXEn
     change_command = '%s -c "Set :CFBundleIdentifier %s"  %s' % (plist_buddy, bundle_identifier, app_info_plist_path)
     result = os.system(change_command)
-    print("change_command:", change_command,"\n修改结果：", result)
+    print("change_command:", change_command, "\n修改结果：", result)
     if result == 0:
         print("================= 修改 bundle indentifier 成功 =================")
     else:
         print("================= 修改 bundle indentifier 失败 =================")
 
-# 融托优选-企业版替换描述文件
+
+# 融托优选- 替换 企业版/app-store、ad-hoc 描述文件
 def change_profile(archive_path, profile_path):
     # 获取到融托优选的描述文件路径  RTYXEnterpriseProfile
     rtyx_profile = os.path.abspath(profile_path)
@@ -165,7 +168,7 @@ def auto_package(project_path ,SCHEME):
     # 获取用户的家目录
     homePath = os.path.expanduser("~")
     print("获取用户的家目录", homePath)
-    finalPath = homePath + "/Desktop/ipa"  # ipa 包的输出路径
+    finalPath = homePath + "/Desktop/RTYXipa"  # ipa 包的输出路径
 
     archive_path = '%s/%s.xcarchive' % (finalPath, SCHEME)  # .archive 包的导出路径
 

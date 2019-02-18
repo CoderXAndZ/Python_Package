@@ -7,16 +7,17 @@ import re
 import hashlib
 import uuid
 import weakref
+import importlib
 
-reload(sys)
+importlib.reload(sys)
 
 # PBX解析类
-class PBXProjectHelper (object) :
+class PBXProjectHelper (object):
 
-	def __init__(self, path) :
-		super (PBXProjectHelper, self).__init__()
+	def __init__(self, path):
+		super(PBXProjectHelper, self).__init__()
 
-		if os.path.exists (path) :
+		if os.path.exists(path):
 
 			self.path = path
 			# print "开始解析PBX路径 = %s" %path
@@ -26,13 +27,13 @@ class PBXProjectHelper (object) :
 
 			# print "项目数据 = %s" %pbxprojData
 			# 解释项目数据
-			self.__parseDocument (pbxprojData)
+			self.__parseDocument(pbxprojData)
 
 			# 构造Project
-			projectId = self.root ["rootObject"]
+			projectId = self.root["rootObject"]
 			self.project = PBXProject(weakref.proxy(self), projectId, self.root ["objects"][projectId])
 
-		else :
+		else:
 			print("无效的PBX路径 = %s" % path)
 
 
@@ -572,7 +573,7 @@ class PBXGroup (PBXNavigatorItem):
 						item.parent = self
 						self.children.append(item)
 				else :
-					print "miss group id = %s" %objId
+					print("miss group id = %s" % objId)
 
 	# 获取匹配名字的子项集合
 	# @param curItem 当前查找父级节点
@@ -635,7 +636,7 @@ class PBXGroup (PBXNavigatorItem):
 					for buildPhase in target.buildPhases :
 						buildPhase.removeBuildFile(navigatorItem)
 						
-			print "remove child  = %s" %navigatorItem.objectId
+			print("remove child  = %s" %navigatorItem.objectId)
 			navigatorItem.parent = None
 			self.data["children"].remove(navigatorItem.objectId)
 			self.helper.delObject(navigatorItem)

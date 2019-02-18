@@ -2,28 +2,21 @@
 # -*- coding: UTF-8 -*-
 # FileName:PackPackage.py
 
-import os
-import sys
-from plistlib import *
+from RTJR.Enterprise.createPhoneList import *
 import time
-from tkinter import messagebox
 import subprocess
-import shutil
-from createPhoneList import *
+from tkinter import *
+from tkinter import messagebox
 
 ## 项目target [需修改]
 #target = "rongtuojinrongexport PATH="
 
 # 项目scheme [需修改] rzjrapp rongtuojinrong
-scheme = "rongtuojinrong"
+scheme = "rongtuojinrongQY"
 
 # teamName  [需修改] Shanghai Runrui Financial Service Co., Ltd.
 teamName = "\"Shanghai Runrui Financial Service Co., Ltd.\""
 
-'''
-导出ipa包的时候 用到的描述文件必须是手动创建的 然后安装到xcode中
-不能用xcode的自动管理生成的
-'''
 
 # 修改打包好的ipa的名字：app109
 # outputPath:所有的ipa包的文件夹的上层文件夹 /Users/admin/Desktop/生成的ipa包
@@ -47,13 +40,17 @@ def changeFileName(exportPath, outputPath, infoPath):
         # 创建assets数组
         asserts = []
         url = "https://www.rongtuojinrong.com/Public/file/app" + fileName + ".ipa"
-        assertsDict = {"kind": "software-package", "url": url}
+        assertsDict = {"kind": "software-package",
+                       "url": url}
         asserts.append(assertsDict)
         # 创建metadata字典
         # 读取版本号
         plist = readPlist(infoPath)
         version = plist["CFBundleVersion"]
-        metadataDict = {"bundle-identifier": "com.ios.rongtuoDevTestNew", "bundle-version": version, "kind": "software", "title": "融托金融"}
+        metadataDict = {"bundle-identifier": "com.ios.rongtuoDevTestNew",
+                        "bundle-version": version,
+                        "kind": "software",
+                        "title": "融托金融"}
         # 创建数组的字典和数组
         dict = {"assets": asserts, "metadata": metadataDict}
         items = [dict]
@@ -77,7 +74,7 @@ def beginToPackage(projectpath, outputPath, idList):
 # xcodebuild archive -project /Users/admin/ios/fmapp.xcodeproj -scheme rzjrapp -archivePath /Users/admin/Desktop/生成的ipa包/rzjrapp.xcarchive
     archivePath = outputPath + "/" + scheme + ".xcarchive"
     # 编译后app中的info.plist文件路径 rzjrapp scheme
-    infoPath = archivePath + "/Products/Applications/" + "rzjrapp" + ".app/Info.plist"
+    infoPath = archivePath + "/Products/Applications/" + scheme + ".app/Info.plist"
     # xcodebuild archive -sdk iphoneos11.1 -project
     buildCommand = "xcodebuild archive -project " + projectpath + " -scheme " + scheme + " -archivePath " + archivePath
 
@@ -99,7 +96,7 @@ def beginToPackage(projectpath, outputPath, idList):
         # 修改对应的业务数据
         pl["LocalUserID"] = n
         writePlist(pl, infoPath)
-        print("====================修改项目  <<" + n + ">>  plist成功,重新签名中====================")
+        # print("====================修改项目  <<" + n + ">>  plist成功,重新签名中====================")
 # codesign -f -s "Shanghai Runrui Financial Service Co., Ltd." --entitlements /Users/admin/Desktop/生成的ipa包/DistributionSummary.plist /Users/admin/Desktop/生成的ipa包/rzjrapp.xcarchive/Products/Applications/rzjrapp.app
         # DistributionSummary
         # codeSignPlistPath = outputPath + "/ExportOptions.plist"
@@ -118,7 +115,7 @@ def beginToPackage(projectpath, outputPath, idList):
         # output = os.system(codesignCommand)
         output = 0
         if output == 0:
-            print("====================项目    <<" + n + ">>  重新签名成功,正在打包中====================")
+            # print("====================项目    <<" + n + ">>  重新签名成功,正在打包中====================")
 #xcodebuild -exportArchive -archivePath /Users/admin/Desktop/生成的ipa包/rzjrapp.xcarchive -exportPath /Users/admin/Desktop/生成的ipa包/120 -exportOptionsPlist /Users/admin/Desktop/生成的ipa包/ExportOptions.plist
             # 导出ipa包需要的plist文件 ExportOptions.plist
             exportPlistPath = outputPath + "/" + "ExportOptions.plist"
@@ -128,7 +125,7 @@ def beginToPackage(projectpath, outputPath, idList):
             result = os.system(exportCommand)
             if result == 0:
                 print("====================项目    <<" + n + ">>  导出成功！！！====================")
-                #将所有的ipa包重命名并移动到'所有的ipa包'文件夹
+                # 将所有的ipa包重命名并移动到'所有的ipa包'文件夹
                 print("exportPath:", exportPath)
                 print("outputPath:", outputPath)
                 changeFileName(exportPath, outputPath, infoPath)

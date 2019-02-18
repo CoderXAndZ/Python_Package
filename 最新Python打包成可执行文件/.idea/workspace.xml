@@ -2,54 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d9019a9-d96b-4062-aaeb-c17f8a3fd835" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ExportOptions.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HomePage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RTAutoPackage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RTAutoPackageGUI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RTYXAppStoreProfile/embedded.mobileprovision" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RTYXAutoPackageAndPost.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RTYXEnterpriseProfile/embedded.mobileprovision" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RTYXHomePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/../LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包成可执行文件/PackPackage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包成可执行文件/PackPackage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包成可执行文件/RecommendGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包成可执行文件/RecommendGUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包成可执行文件/createPhoneList.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包成可执行文件/createPhoneList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包成可执行文件加图片/PackPackage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包成可执行文件加图片/PackPackage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包成可执行文件加图片/RecommendGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包成可执行文件加图片/RecommendGUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包成可执行文件加图片/createPhoneList.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包成可执行文件加图片/createPhoneList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包成可执行文件加图片/game.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包成可执行文件加图片/game.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包成可执行文件加图片/mypic.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包成可执行文件加图片/mypic.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包成可执行文件加图片/mypic2.ico" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包成可执行文件加图片/mypic2.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包成可执行文件加图片/使用方法.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包成可执行文件加图片/使用方法.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本1.0/DistributionSummary.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本1.0/DistributionSummary.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本1.0/ExportOptions.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本1.0/ExportOptions.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本1.0/PackPackage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本1.0/PackPackage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本1.0/RecommendGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本1.0/RecommendGUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本1.0/createPhoneList.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本1.0/createPhoneList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本1.0/使用方法.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本1.0/使用方法.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本2.0/DistributionSummary.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本2.0/DistributionSummary.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本2.0/ExportOptions.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本2.0/ExportOptions.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本2.0/PackPackage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本2.0/PackPackage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本2.0/RecommendGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本2.0/RecommendGUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本2.0/createPhoneList.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本2.0/createPhoneList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本2.0/使用方法.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本2.0/使用方法.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本3/PackPackage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本3/PackPackage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本3/RecommendGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本3/RecommendGUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本3/createPhoneList.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本3/createPhoneList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Python打包界面化版本3/使用方法.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Python打包界面化版本3/使用方法.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../打包需要的文件/RMGJ.plist" beforeDir="false" afterPath="$PROJECT_DIR$/../打包需要的文件/RMGJ.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../打包需要的文件/app0727.plist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../打包需要的文件/工作簿1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../打包需要的文件/工作簿1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../打包需要的文件/推荐人20180528.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../文件/PackPackage安卓版.py" beforeDir="false" afterPath="$PROJECT_DIR$/../文件/PackPackage安卓版.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../文件/RecommendGUI安卓版.py" beforeDir="false" afterPath="$PROJECT_DIR$/../文件/RecommendGUI安卓版.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../文件/pack.py" beforeDir="false" afterPath="$PROJECT_DIR$/../文件/pack.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../文件/pack第一版，只能实现简单的打包.py" beforeDir="false" afterPath="$PROJECT_DIR$/../文件/pack第一版，只能实现简单的打包.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../适配Xcode9.4打包可执行文件/PackPackage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../适配Xcode9.4打包可执行文件/PackPackage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../适配Xcode9.4打包可执行文件/RecommendGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../适配Xcode9.4打包可执行文件/RecommendGUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../适配Xcode9.4打包可执行文件/createPhoneList.py" beforeDir="false" afterPath="$PROJECT_DIR$/../适配Xcode9.4打包可执行文件/createPhoneList.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RTJR/RTJRAutoPackage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RTJR/RTJRGUI.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RTJRAppStoreProfile/embedded.mobileprovision" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HomePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/Home/HomePage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PBXProjectHelper.py" beforeDir="false" afterPath="$PROJECT_DIR$/PBXProjectHelper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PackPackage.py" beforeDir="false" afterPath="$PROJECT_DIR$/RTJR/Enterprise/PackPackage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RTAutoPackage.py" beforeDir="false" afterPath="$PROJECT_DIR$/RTYX/RTAutoPackage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RTAutoPackageGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/RTYX/RTAutoPackageGUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecommendGUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/RTJR/Enterprise/RecommendGUI.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/createPhoneList.py" beforeDir="false" afterPath="$PROJECT_DIR$/RTJR/Enterprise/createPhoneList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rtyx打包程序界面.png" beforeDir="false" afterPath="$PROJECT_DIR$/RTYX/rtyx打包程序界面.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,66 +23,83 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Python$RTYXHomePage.coverage" NAME="RTYXHomePage Coverage Results" MODIFIED="1550045836983" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$createPhoneList.coverage" NAME="createPhoneList Coverage Results" MODIFIED="1543655758117" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$AutoPackage.coverage" NAME="AutoPackage Coverage Results" MODIFIED="1543655769330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$PBXProjectHelper.coverage" NAME="PBXProjectHelper Coverage Results" MODIFIED="1543655965650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$RecommendGUI.coverage" NAME="RecommendGUI Coverage Results" MODIFIED="1550114830136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$createPhoneList.coverage" NAME="createPhoneList Coverage Results" MODIFIED="1550192010312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RTJR/Enterprise" />
+    <SUITE FILE_PATH="coverage/Python$PBXProjectHelper.coverage" NAME="PBXProjectHelper Coverage Results" MODIFIED="1550194443303" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$RecommendGUI.coverage" NAME="RecommendGUI Coverage Results" MODIFIED="1550454625611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RTJR/Enterprise" />
     <SUITE FILE_PATH="coverage/Python$PackPackage.coverage" NAME="PackPackage Coverage Results" MODIFIED="1543655781457" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$RTAutoPackage.coverage" NAME="RTAutoPackage Coverage Results" MODIFIED="1550139565883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$HomePage.coverage" NAME="HomePage Coverage Results" MODIFIED="1550110318953" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$RTAutoPackage.coverage" NAME="RTAutoPackage Coverage Results" MODIFIED="1550190671834" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$HomePage.coverage" NAME="HomePage Coverage Results" MODIFIED="1550455531651" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Python$RTJRGUI.coverage" NAME="RTJRGUI Coverage Results" MODIFIED="1550198541009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/RTJR" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/createPhoneList.py">
+        <entry file="file://$PROJECT_DIR$/RTJR/Enterprise/createPhoneList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RTYXAutoPackageAndPost.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="40" />
+            <state relative-caret-position="-39">
+              <caret line="99" column="18" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
               <folding>
-                <element signature="e#80#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RTAutoPackageGUI.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
-              <folding>
-                <element signature="e#59#79#0" expanded="true" />
+                <element signature="e#64#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/RTAutoPackage.py">
+        <entry file="file://$PROJECT_DIR$/RTJR/Enterprise/PackPackage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="159" column="40" lean-forward="true" selection-start-line="159" selection-start-column="40" selection-end-line="159" selection-end-column="40" />
+            <state relative-caret-position="168">
+              <caret line="81" column="28" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
               <folding>
-                <element signature="e#68#77#0" expanded="true" />
+                <element signature="e#76#121#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/shutil.py">
+        <entry file="file://$PROJECT_DIR$/RTJR/Enterprise/RecommendGUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="226" column="4" selection-start-line="226" selection-start-column="4" selection-end-line="226" selection-end-column="4" />
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Home/HomePage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+              <folding>
+                <element signature="e#60#80#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RTJR/RTJRAutoPackage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="93">
+              <caret line="48" column="36" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="36" />
+              <folding>
+                <element signature="e#67#76#0" expanded="true" />
+                <marker date="1550454088022" expanded="true" signature="4062:4112" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RTJR/RTJRGUI.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-4">
+              <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+              <folding>
+                <element signature="e#72#92#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,18 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ExportOptions</find>
-      <find>createPlist</find>
-      <find>DistributionSummary</find>
-      <find>rongtuojinrong</find>
-      <find>执行签名命令:</find>
-      <find>xcode-select</find>
-      <find>info.</find>
-      <find>.xcarchive</find>
-      <find>appPath</find>
-      <find>CONFIGURATION</find>
-      <find>url</find>
-      <find>to_addr</find>
       <find>archive_project</find>
       <find>send_email</find>
       <find>导出结果：</find>
@@ -163,6 +132,19 @@
       <find>project_path</find>
       <find>RTYXProfile</find>
       <find>change_bundle_identifier</find>
+      <find>print</find>
+      <find>/ipa</find>
+      <find>ExportOptionsPlistPath</find>
+      <find>create_export_options_plist</find>
+      <find>pack</find>
+      <find>ipa</find>
+      <find>Desktop</find>
+      <find>change_profile</find>
+      <find>excelFile</find>
+      <find>teamName</find>
+      <find>Applications</find>
+      <find>Info.plist</find>
+      <find>rzjrapp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,22 +153,31 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/PBXProjectHelper.py" />
         <option value="$PROJECT_DIR$/createPhoneList.py" />
-        <option value="$PROJECT_DIR$/HomePage.py" />
         <option value="$PROJECT_DIR$/RTYXHomePage.py" />
         <option value="$PROJECT_DIR$/RTYXAutoPackageAndPost.py" />
         <option value="$PROJECT_DIR$/RecommendGUI.py" />
-        <option value="$PROJECT_DIR$/RTAutoPackageGUI.py" />
-        <option value="$PROJECT_DIR$/PackPackage.py" />
         <option value="$PROJECT_DIR$/RTAutoPackage.py" />
+        <option value="$PROJECT_DIR$/RTAutoPackageGUI.py" />
+        <option value="$PROJECT_DIR$/HomePage.py" />
+        <option value="$PROJECT_DIR$/PackPackage.py" />
+        <option value="$PROJECT_DIR$/PBXProjectHelper.py" />
+        <option value="$PROJECT_DIR$/RTYX/RTAutoPackageGUI.py" />
+        <option value="$PROJECT_DIR$/RTJR/Enterprise/createPhoneList.py" />
+        <option value="$PROJECT_DIR$/RTJR/RTJRGUI.py" />
+        <option value="$PROJECT_DIR$/RTYX/RTAutoPackage.py" />
+        <option value="$PROJECT_DIR$/RTJR/RTJRAutoPackage.py" />
+        <option value="$PROJECT_DIR$/RTJR/Enterprise/RecommendGUI.py" />
+        <option value="$PROJECT_DIR$/Home/HomePage.py" />
+        <option value="$PROJECT_DIR$/RTJR/Enterprise/PackPackage.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="366" />
-    <option name="width" value="1062" />
-    <option name="height" value="699" />
+    <option name="x" value="44" />
+    <option name="y" value="155" />
+    <option name="width" value="1144" />
+    <option name="height" value="693" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -196,7 +187,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,10 +194,27 @@
               <item name="最新Python打包成可执行文件" type="b2602c69:ProjectViewProjectNode" />
               <item name="最新Python打包成可执行文件" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="最新Python打包成可执行文件" type="b2602c69:ProjectViewProjectNode" />
+              <item name="最新Python打包成可执行文件" type="462c0819:PsiDirectoryNode" />
+              <item name="Home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="最新Python打包成可执行文件" type="b2602c69:ProjectViewProjectNode" />
+              <item name="最新Python打包成可执行文件" type="462c0819:PsiDirectoryNode" />
+              <item name="RTJR" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="最新Python打包成可执行文件" type="b2602c69:ProjectViewProjectNode" />
+              <item name="最新Python打包成可执行文件" type="462c0819:PsiDirectoryNode" />
+              <item name="RTJR" type="462c0819:PsiDirectoryNode" />
+              <item name="Enterprise" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,14 +225,18 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/RTYXAppStoreProfile" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/RTJRAppStoreProfile" />
       <recent name="$PROJECT_DIR$/RTYXAppStoreProfile" />
       <recent name="$PROJECT_DIR$/RTYXProfile" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/RTJR/Enterprise" />
+      <recent name="$PROJECT_DIR$/RTJR" />
+      <recent name="$PROJECT_DIR$/Home" />
+      <recent name="$PROJECT_DIR$/RTYX" />
+      <recent name="$PROJECT_DIR$/RTYXAppStoreProfile" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -240,7 +251,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.RTAutoPackage">
+  <component name="RunManager" selected="Python.HomePage">
     <configuration name="HomePage" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="最新Python打包成可执行文件的" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -254,7 +265,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/HomePage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Home/HomePage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -285,7 +296,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="RTAutoPackage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="RTJRGUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="最新Python打包成可执行文件的" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -293,34 +304,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RTJR" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RTAutoPackageGUI.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="RTYXHomePage" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="最新Python打包成可执行文件的" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RTYXHomePage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RTJR/RTJRGUI.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -337,12 +326,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RTJR/Enterprise" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RecommendGUI.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RTJR/Enterprise/RecommendGUI.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="createPhoneList" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="最新Python打包成可执行文件的" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/RTJR/Enterprise" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/RTJR/Enterprise/createPhoneList.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -353,11 +364,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.RTAutoPackage" />
-        <item itemvalue="Python.RecommendGUI" />
         <item itemvalue="Python.HomePage" />
-        <item itemvalue="Python.RTYXHomePage" />
+        <item itemvalue="Python.RecommendGUI" />
+        <item itemvalue="Python.RTJRGUI" />
         <item itemvalue="Python.PBXProjectHelper" />
+        <item itemvalue="Python.createPhoneList" />
       </list>
     </recent_temporary>
   </component>
@@ -379,11 +390,12 @@
       <workItem from="1546568576857" duration="119000" />
       <workItem from="1550036021966" duration="11153000" />
       <workItem from="1550106254817" duration="28076000" />
+      <workItem from="1550139561300" duration="21765000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56286000" />
+    <option name="totallyTimeSpent" value="78051000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,24 +407,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="31" y="112" width="1062" height="699" extended-state="0" />
+    <frame x="40" y="91" width="1144" height="693" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25588235" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2413793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32733223" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49914238" weight="0.34925866" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3261944" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49914238" visible="true" weight="0.4076539" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39868203" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32903227" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32784185" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32903227" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50085765" side_tool="true" weight="0.32828283" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32903227" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32903227" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32784185" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -447,65 +459,8 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/PBXProjectHelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="77" column="34" lean-forward="true" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
-          <folding>
-            <element signature="e#41#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AutoPackage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="95" column="36" lean-forward="true" selection-start-line="95" selection-start-column="36" selection-end-line="95" selection-end-column="36" />
-          <folding>
-            <element signature="e#39#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RecommendGUI.spec">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RTYXHomePage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <element signature="e#61#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/HomePage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="27" />
-          <folding>
-            <element signature="e#60#80#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="2860" column="8" selection-start-line="2860" selection-start-column="8" selection-end-line="2860" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RecommendGUI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="84" column="26" selection-start-line="84" selection-start-column="26" selection-end-line="84" selection-end-column="26" />
-          <folding>
-            <element signature="e#77#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/tkinter/constants.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -517,54 +472,10 @@
     <entry file="file://$PROJECT_DIR$/ExportOptions.plist">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/createPhoneList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/plistlib.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="972" column="37" lean-forward="true" selection-start-line="972" selection-start-column="37" selection-end-line="972" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RTAutoPackageGUI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
-          <folding>
-            <element signature="e#59#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/XZ公司项目/RTYX/Pods/AliyunOSSiOS/AliyunOSSSDK/OSSClient.m">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-29955">
           <caret line="15" column="28" lean-forward="true" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RTYXAutoPackageAndPost.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="40" />
-          <folding>
-            <element signature="e#80#89#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PackPackage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-          <folding>
-            <element signature="e#76#85#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -591,17 +502,139 @@
     </entry>
     <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/shutil.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
+        <state relative-caret-position="3315">
           <caret line="226" column="4" selection-start-line="226" selection-start-column="4" selection-end-line="226" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RTAutoPackage.py">
+    <entry file="file://$PROJECT_DIR$/RTYXHomePage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="159" column="40" lean-forward="true" selection-start-line="159" selection-start-column="40" selection-end-line="159" selection-end-column="40" />
+        <state relative-caret-position="171">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#61#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PBXProjectHelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#41#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RTYX/RTAutoPackageGUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-231">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AutoPackage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="885">
+          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+          <folding>
+            <element signature="e#39#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RTYXAutoPackageAndPost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="71" column="84" lean-forward="true" selection-start-line="70" selection-start-column="3" selection-end-line="71" selection-end-column="84" />
+          <folding>
+            <element signature="e#80#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/plistlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="961" column="4" selection-start-line="961" selection-start-column="4" selection-end-line="961" selection-end-column="4" />
+          <folding>
+            <element signature="e#1688#1703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="2120" column="10" selection-start-line="2120" selection-start-column="6" selection-end-line="2120" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RTJR/Enterprise/createPhoneList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39">
+          <caret line="99" column="18" selection-start-line="99" selection-start-column="18" selection-end-line="99" selection-end-column="18" />
+          <folding>
+            <element signature="e#64#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RTYX/RTAutoPackage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#68#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RTJR/Enterprise/RecommendGUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Home/HomePage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+          <folding>
+            <element signature="e#60#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RTJR/RTJRGUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding>
+            <element signature="e#72#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RTJR/RTJRAutoPackage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="48" column="36" selection-start-line="48" selection-start-column="29" selection-end-line="48" selection-end-column="36" />
+          <folding>
+            <element signature="e#67#76#0" expanded="true" />
+            <marker date="1550454088022" expanded="true" signature="4062:4112" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RTJR/Enterprise/PackPackage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="81" column="28" selection-start-line="81" selection-start-column="28" selection-end-line="81" selection-end-column="28" />
+          <folding>
+            <element signature="e#76#121#0" expanded="true" />
           </folding>
         </state>
       </provider>

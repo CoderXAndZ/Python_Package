@@ -1,13 +1,12 @@
 #!/usr/local/bin/python3
 # -*- coding: UTF-8 -*-
-# 自动打包界面
+# 融托优选-自动打包界面
 
 import tkinter as tk
 from tkinter import *
-from tkinter.filedialog import askdirectory
 from tkinter.filedialog import askopenfilename
 from tkinter import messagebox
-import RTAutoPackage   # 融托优选和融米小管家自动打包
+from RTYX import RTAutoPackage
 
 
 # 工程路径
@@ -17,12 +16,12 @@ def select_project_file():
 
 
 # 判断是否选择了所有的路径
-def judge_path(project_file):
+def judge_path(project_file_path):
 
-    if project_file != '':
+    if project_file_path != '':
         print("configuration：", configuration.get())
         print("method：", method.get())
-        RTAutoPackage.archive_project(project_file, configuration.get(), password_input.get(), method.get())
+        RTAutoPackage.archive_project(project_file_path, configuration.get(), password_input.get(), method.get())
     else:
         messagebox.showinfo("温馨提示", "请选择工程路径！")
 
@@ -60,7 +59,7 @@ def create_window(application_name):
 
     # ipa包输出路径
     tk.Label(root, text="输出路径:").grid(row=2, column=0)
-    tk.Label(root, text="ipa包输出路径, 默认路径是-Desktop/ipa").grid(row=2, column=1)
+    tk.Label(root, text="ipa包输出路径, 默认路径是-Desktop/RTYXipa").grid(row=2, column=1)
     # tk.Entry(root, textvariable=output_path).grid(row=1, column=1)
     # tk.Button(root, text="路径选择", command=select_path).grid(row=1, column=2, padx=10, pady=5)
 
@@ -74,6 +73,6 @@ def create_window(application_name):
     root.mainloop()
 
 
-if __name__ == '__main__':
-    create_window("融托优选")
+# if __name__ == '__main__':
+#     create_window("融托优选")
 
