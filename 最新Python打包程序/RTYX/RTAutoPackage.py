@@ -5,13 +5,7 @@
 import os
 import shutil
 from plistlib import *
-import PostToFirIm
-
-from tkinter import messagebox
-from email.mime.text import MIMEText
-from email.header import Header
-from email.utils import parseaddr, formataddr
-import smtplib
+from PostToFirIm import *
 
 
 # 开机密码和测试人员邮箱 configuration
@@ -29,7 +23,7 @@ def archive_project(project_path, configuration, password, method):
     scheme = project_name.split('.')[0]
     project_file = os.path.dirname(project_path)   # 根据全路径获取文件所在路径
     archive_path = '%s/%s.xcarchive' % (ipa_output_path, scheme)  # .archive 包的导出路径
-    ipa_path = '%s/%s.ipa' % (ipa_output_path, scheme)
+    ipa_path = '%s/%s.ipa' % (ipa_output_path, 'RTYX')
     export_options_plist_path = '%s/ExportOptions.plist' % ipa_output_path
 
     print("输出路径：", ipa_output_path)
@@ -77,11 +71,11 @@ def archive_project(project_path, configuration, password, method):
     else:
         change_profile(archive_path, "RTYXAppStoreProfile/embedded.mobileprovision")
 
-    # unlock Keychain
-    security = '/usr/bin/security'  # 终端输入 which security 获取路径 -p 后面跟的是开机密码
-    unlock_comand = '%s unlock-keychain -p %s %s/Library/Keychains/login.keychain' % (security, password, home_path)
-    os.system(unlock_comand)
-    print("解锁钥匙串：", unlock_comand)
+    # # unlock Keychain
+    # security = '/usr/bin/security'  # 终端输入 which security 获取路径 -p 后面跟的是开机密码
+    # unlock_comand = '%s unlock-keychain -p %s %s/Library/Keychains/login.keychain' % (security, password, home_path)
+    # os.system(unlock_comand)
+    # print("解锁钥匙串：", unlock_comand)
 
     print("================= 正在导出... =================")
     # export ipa
@@ -97,7 +91,7 @@ def archive_project(project_path, configuration, password, method):
     if result == 0:
         print('================= 打包成功 =================')
 
-        post_to_fir_im(ipa_path, '1935722630@qq.com', "adhoc包")
+        post_to_fir_im(ipa_path, '1935722630@qq.com, 786999051@qq.com, 1316895590@qq.com', "adhoc包")
         # messagebox.showinfo("温馨提示", "打包完毕！")
     else:
         print('================= 打包失败 =================')

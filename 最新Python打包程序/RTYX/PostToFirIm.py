@@ -1,27 +1,19 @@
 #!/usr/local/bin/python3
 # -*- coding: UTF-8 -*-
-# 上传到 fir.im
+# 上传到 fir.im PostToFirIm.py
 
 import os
 from email.mime.text import MIMEText
 from email.header import Header
 from email.utils import parseaddr, formataddr
 import smtplib
-
-# PROJECT_NAME = 'RTYX'  # 'RMGJ'
-# CONFIGURATION = 'Debug'
-# SCHEME = 'RTYX'  # 'RMGJ'
-
-# PROJECT_PATH = '/Users/admin/XZ公司项目/RTYX'  # '/Users/mac/XZ公司项目/rmgj'
-# XCWORKSPACE_PATH = '/Users/admin/XZ公司项目/RTYX/RTYX.xcworkspace'  # '/Users/mac/XZ公司项目/rmgj/RMGJ.xcworkspace'
-# ExportOptionsPlistPath = '/Users/admin/Desktop/关于打包/融托优选/ExportOptions.plist'
-# EXPORT_PATH = '/Users/admin/Desktop/关于打包/融托优选'
-# archive_path = '%s/%s.xcarchive' % (EXPORT_PATH, SCHEME)  # .archive 包的导出路径
-# ipa_path = '/Users/admin/Desktop/关于打包/融托优选/%s.ipa' % SCHEME
-# ipa_path = '/Users/admin/Desktop/RTYXipa/RTYX.ipa'
+from tkinter import messagebox
 
 
 # 将ipa包上传到fir_im
+# ipa_path:ipa包路径,
+# emails:邮件地址,多个地址英文逗号分隔
+# update_description:更新内容
 def post_to_fir_im(ipa_path, emails, update_description):
     # 登录 fir.im  token 44f0de5d6180e642acb59c592c567ca9
     result = os.popen('fir login -T 1adcc557a27afaf0341816186905cd5c').read()
@@ -78,7 +70,7 @@ def send_email(url, emails):
     server.login(from_addr, password)
     server.sendmail(from_addr, to_addr.split(','), message.as_string())
     server.quit()
-
+    messagebox.showinfo("温馨提示", "打包完毕！")
 
 
 # 格式化一个邮件地址，注意不能简单地传入name <addr@example.com>，因为如果包含中文，需要通过Header对象进行编码。

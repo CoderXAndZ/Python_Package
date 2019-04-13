@@ -110,6 +110,6 @@ def create_window(application_name):
 
     root.mainloop()
 
-
-if __name__ == '__main__':
-    create_window("融托金融")
+#
+# if __name__ == '__main__':
+#     create_window("融托金融")

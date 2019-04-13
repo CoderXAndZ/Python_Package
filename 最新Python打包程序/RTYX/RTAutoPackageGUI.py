@@ -70,6 +70,9 @@ def create_window(application_name):
     # 让用户选择 method - 打包的类型
     OptionMenu(root, method, 'ad-hoc', 'enterprise', 'app-store').grid(row=4, column=2, pady=10)
 
+    # # 打包
+    # tk.Button(root, text="发送邮件", command=lambda: judge_path(project_file.get())).grid(row=4, column=0, pady=10)
+
     root.mainloop()
 
 

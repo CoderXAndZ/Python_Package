@@ -7,6 +7,7 @@ import time
 import subprocess
 from tkinter import *
 from tkinter import messagebox
+import os
 
 ## 项目target [需修改]
 #target = "rongtuojinrongexport PATH="
