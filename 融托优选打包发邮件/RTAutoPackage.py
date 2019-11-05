@@ -2,10 +2,11 @@
 # -*- coding: UTF-8 -*-
 # 融托优选和融米小管家 自动打包
 
-import os
 import shutil
 from plistlib import *
 from PostToFirIm import *
+import os
+import sys
 
 
 # 开机密码和测试人员邮箱 configuration
@@ -65,11 +66,15 @@ def archive_project(project_path, configuration, password, method):
     os.system(archive_comand)
     print("archive工程：", archive_comand)
 
+    current_path = os.path.dirname(os.path.relpath(sys.argv[0]))
+
     # 如果打企业版的包，替换掉描述文件
     if method == "enterprise":
-        change_profile(archive_path, "RTYXEnterpriseProfile/embedded.mobileprovision")
+        enterprise_path = current_path + "/RTYXEnterpriseProfile/embedded.mobileprovision"
+        change_profile(archive_path, enterprise_path)
     else:
-        change_profile(archive_path, "RTYXAppStoreProfile/embedded.mobileprovision")
+        adhoc_path = current_path + "/RTYXAppStoreProfile/embedded.mobileprovision"
+        change_profile(archive_path, adhoc_path)
 
     # # unlock Keychain
     # security = '/usr/bin/security'  # 终端输入 which security 获取路径 -p 后面跟的是开机密码
@@ -91,8 +96,8 @@ def archive_project(project_path, configuration, password, method):
     if result == 0:
         print('================= 打包成功 =================')
 
-        post_to_fir_im(ipa_path, '1935722630@qq.com, 786999051@qq.com, 1316895590@qq.com, 1107271389@qq.com, 937151811@qq.com', "adhoc包")
-        # messagebox.showinfo("温馨提示", "打包完毕！")
+        # post_to_fir_im(ipa_path, '1935722630@qq.com, 786999051@qq.com, 1316895590@qq.com, 1107271389@qq.com, 937151811@qq.com', "adhoc包")
+        messagebox.showinfo("温馨提示", "打包完毕！")
     else:
         print('================= 打包失败 =================')
 

@@ -37,8 +37,7 @@ def post_to_fir_im(ipa_path, emails, update_description):
 
         # print("\n\n", pulish_result.split('\n')[7][-24:], "\n\n")
 
-        messagebox.showinfo("温馨提示", "打包完毕！")
-        # send_email(load_url, emails)   # 暂不发送邮件
+        send_email(load_url, emails)
     else:
         print('================= 发布失败 =================')
 

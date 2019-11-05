@@ -2,12 +2,12 @@
 # -*- coding: UTF-8 -*-
 # 融托优选-自动打包界面
 
-from tkinter import ttk
-import tkinter
+import tkinter as tk
 from tkinter import *
 from tkinter.filedialog import askopenfilename
 from tkinter import messagebox
-from RTYX import RTAutoPackage
+import RTAutoPackage
+import wx
 
 
 # 工程路径
@@ -29,9 +29,9 @@ def judge_path(project_file_path):
 
 # 创建窗口
 def create_window(application_name):
-    root = tkinter.Tk()
+    root = tk.Tk()
     root.title(application_name)  # 父容器标题
-
+    frame1 = tk.Frame()
     # 创建路径
     global project_file  # 文件路径
     # global output_path   # ipa包输出路径
@@ -50,22 +50,23 @@ def create_window(application_name):
     method.set("ad-hoc")
 
     # 工程路径
-    ttk.Label(root, text="工程路径:").grid(row=0, column=0)
-    ttk.Entry(root, textvariable=project_file).grid(row=0, column=1)
-    ttk.Button(root, text="路径选择", command=select_project_file).grid(row=0, column=2, padx=10, pady=5)
+    tk.Label(root, text="工程路径:").grid(row=0, column=0)
+    tk.Entry(root, textvariable=project_file).grid(row=0, column=1)
+    tk.Button(frame1, text="路径选择", foreground="red", bg='green', anchor='nw', relief=FLAT, command=select_project_file).pack(fill=X)
+    frame1.grid(row=0, column=2, padx=10, pady=5)
 
     # 开机密码
-    ttk.Label(root, text="开机密码:").grid(row=1, column=0)
-    ttk.Entry(root, textvariable=password_input).grid(row=1, column=1)
+    tk.Label(root, text="开机密码:").grid(row=1, column=0)
+    tk.Entry(root, textvariable=password_input).grid(row=1, column=1)
 
     # ipa包输出路径
-    ttk.Label(root, text="输出路径:").grid(row=2, column=0)
-    ttk.Label(root, text="ipa包输出路径, 默认路径是-Desktop/RTYXipa").grid(row=2, column=1)
+    tk.Label(root, text="输出路径:").grid(row=2, column=0)
+    tk.Label(root, text="ipa包输出路径, 默认路径是-Desktop/RTYXipa").grid(row=2, column=1)
     # tk.Entry(root, textvariable=output_path).grid(row=1, column=1)
     # tk.Button(root, text="路径选择", command=select_path).grid(row=1, column=2, padx=10, pady=5)
 
     # 打包
-    ttk.Button(root, text="开始打包", command=lambda: judge_path(project_file.get())).grid(row=4, column=0, pady=10)
+    tk.Button(root, text="开始打包", fg="blue", command=lambda: judge_path(project_file.get())).grid(row=4, column=0, pady=10)
     # 让用户选择 CONFIGURATION - 打包的模式
     w = OptionMenu(root, configuration, 'Debug', 'Release').grid(row=4, column=1, pady=10)
     # 让用户选择 method - 打包的类型
@@ -77,6 +78,12 @@ def create_window(application_name):
     root.mainloop()
 
 
-# if __name__ == '__main__':
-#     create_window("融托优选")
-
+if __name__ == '__main__':
+    create_window("融托优选")
+    # # 获取到融托优选的描述文件路径  RTYXEnterpriseProfile
+    # current_path = os.path.dirname(os.path.relpath(sys.argv[0]))
+    # print("current_path-----", current_path)
+    # xz_path = current_path + "/RTYXEnterpriseProfile/embedded.mobileprovision"
+    # print("xz_path-----", xz_path)
+    # # rtyx_profile = os.path.abspath("RTYXEnterpriseProfile/embedded.mobileprovision")
+    # # print(rtyx_profile)

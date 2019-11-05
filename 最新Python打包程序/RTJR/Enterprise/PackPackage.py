@@ -62,83 +62,150 @@ def changeFileName(exportPath, outputPath, infoPath):
 
 
 # 项目路径，打包的输出路径，
-def beginToPackage(projectpath, outputPath, idList):
+def beginToPackage(project_path, output_path, idList):
     print("======打包正式开始======")
     # 项目记时开始
     time_start = time.time()
-    # 清空项目  xcodebuild clean -project fmapp.xcodeproj -scheme rzjrapp -configuration Release
-    clean_Command = "xcodebuild clean -project " + projectpath + " -scheme " + scheme + ' -configuration Release'
-    print("执行清空项目命令: " + clean_Command)
-    clean_Command_output = os.system(clean_Command)
 
-# 编译命令
-# xcodebuild archive -project /Users/admin/ios/fmapp.xcodeproj -scheme rzjrapp -archivePath /Users/admin/Desktop/生成的ipa包/rzjrapp.xcarchive
-    archivePath = outputPath + "/" + scheme + ".xcarchive"
+    os.system("sudo xcode-select --switch /Users/admin/Documents/Xcode.app/Contents/Developer/")
+    # xcodebuild = '/usr/bin/xcodebuild'  # 终端输入 which xcodebuild 获取路径
+    # 由于使用Xcode10.1打包，且它在文稿中，所以修改xcodebuild的路径为该Xcode10.1的xcodebuild的路径
+    xcodebuild = '/Users/admin/Documents/Xcode.app/Contents/Developer/usr/bin/xcodebuild'
+
+    # 编译命令
+    archive_path = output_path + "/" + scheme + ".xcarchive"
     # 编译后app中的info.plist文件路径 rzjrapp scheme
-    infoPath = archivePath + "/Products/Applications/" + scheme + ".app/Info.plist"
-    # xcodebuild archive -sdk iphoneos11.1 -project
-    buildCommand = "xcodebuild archive -project " + projectpath + " -scheme " + scheme + " -archivePath " + archivePath
+    info_path = archive_path + "/Products/Applications/" + scheme + ".app/Info.plist"
 
-    # buildCommand = "xcodebuild -workspace "+projectpath+" -scheme " + scheme + " -configuration Release archive " \
-    #   "-archivePath  "+outputPath+" -destination generic/platform=iOS"
+    print("================= Archive =================")
+    archive_comand = '%s archive -workspace %s ' \
+                     '-scheme %s ' \
+                     '-configuration %s ' \
+                     '-archivePath %s' % (xcodebuild, project_path, scheme, 'Release', archive_path)
+    os.system(archive_comand)
+    print("archive工程：", archive_comand)
 
-    print("执行编译命令: " + buildCommand)
-    output = os.system(buildCommand)
-    
-    if os.path.exists(outputPath + "/所有的ipa包"):
-        shutil.rmtree(outputPath + "/所有的ipa包")  # 删除文件夹和文件夹里面的内容
+    if os.path.exists(output_path + "/所有的ipa包"):
+        shutil.rmtree(output_path + "/所有的ipa包")  # 删除文件夹和文件夹里面的内容
     # 将所有的ipa包移动到统一的文件夹
-    os.makedirs(outputPath + "/所有的ipa包")
-##  changeFileName("/Users/admin/Desktop/生成的ipa包/111", "/Users/admin/Desktop/生成的ipa包","/Users/admin/Desktop/生成的ipa包/111/Payload/rzjrapp.app/Info.plist")
-
+    os.makedirs(output_path + "/所有的ipa包")
     for n in idList:
         # 修改plist文件
-        pl = readPlist(infoPath)
+        pl = readPlist(info_path)
         # 修改对应的业务数据
         pl["LocalUserID"] = n
-        writePlist(pl, infoPath)
-        # print("====================修改项目  <<" + n + ">>  plist成功,重新签名中====================")
-# codesign -f -s "Shanghai Runrui Financial Service Co., Ltd." --entitlements /Users/admin/Desktop/生成的ipa包/DistributionSummary.plist /Users/admin/Desktop/生成的ipa包/rzjrapp.xcarchive/Products/Applications/rzjrapp.app
-        # DistributionSummary
-        # codeSignPlistPath = outputPath + "/ExportOptions.plist"
-        # appPath = archivePath + "/Products/Applications/" + "rzjrapp" + ".app"  # scheme
-        # archive_info_path = archivePath + "/Info.plist"
-        # change_archive_info_path = readPlist(archive_info_path)
-        # print("\n =========== change_archive_info_path:\n", change_archive_info_path)
-        # print("\n =========== ApplicationProperties: ", change_archive_info_path["ApplicationProperties"])
-        # change_archive_info_path["ApplicationProperties"]["SigningIdentity"] = "iPhone Developer: runqiu zhou(W6984V2KZV)"
-        # writePlist(change_archive_info_path, archive_info_path)
-        #
-        # # codesignCommand = "codesign -f -s " + 'iPhone Distribution: ' + teamName + " --entitlements " + codeSignPlistPath + " " + appPath
-        # # codesignCommand = "codesign -f -s " + '7946EE36C749575B27C31120C59191FE88061258' " --entitlements " + codeSignPlistPath + " " + appPath   W6984V2KZV)
-        # codesignCommand = "codesign -f -s " + "iPhone Developer: runqiu zhou" + " --entitlements " + codeSignPlistPath + " " + appPath
-        # print("执行签名命令: " + codesignCommand)
-        # output = os.system(codesignCommand)
+        writePlist(pl, info_path)
         output = 0
         if output == 0:
-            # print("====================项目    <<" + n + ">>  重新签名成功,正在打包中====================")
-#xcodebuild -exportArchive -archivePath /Users/admin/Desktop/生成的ipa包/rzjrapp.xcarchive -exportPath /Users/admin/Desktop/生成的ipa包/120 -exportOptionsPlist /Users/admin/Desktop/生成的ipa包/ExportOptions.plist
             # 导出ipa包需要的plist文件 ExportOptions.plist
-            exportPlistPath = outputPath + "/" + "ExportOptions.plist"
-            exportPath = outputPath + "/" + n
-            exportCommand = "xcodebuild -exportArchive -archivePath " + archivePath + " -exportPath " + exportPath + " -exportOptionsPlist " + exportPlistPath + ' -allowProvisioningUpdates'
-            print("执行打包命令: " + exportCommand)
-            result = os.system(exportCommand)
+            exportPlistPath = output_path + "/" + "ExportOptions.plist"
+            exportPath = output_path + "/" + n
+            print("================= 正在导出... =================")
+            # export ipa
+            export_comand = '%s -exportArchive -archivePath %s ' \
+                            '-exportPath %s ' \
+                            '-exportOptionsPlist %s ' \
+                            '-allowProvisioningUpdates' % (
+                            xcodebuild, archive_path, exportPath, exportPlistPath)
+            result = os.system(export_comand)
+            print("导出工程：", export_comand)
             if result == 0:
                 print("====================项目    <<" + n + ">>  导出成功！！！====================")
                 # 将所有的ipa包重命名并移动到'所有的ipa包'文件夹
                 print("exportPath:", exportPath)
-                print("outputPath:", outputPath)
-                changeFileName(exportPath, outputPath, infoPath)
-#                changeFileName("/Users/admin/Desktop/生成的ipa包/111", "/Users/admin/Desktop/生成的ipa包")
+                print("outputPath:", output_path)
+                changeFileName(exportPath, output_path, info_path)
+        #                changeFileName("/Users/admin/Desktop/生成的ipa包/111", "/Users/admin/Desktop/生成的ipa包")
         else:
             print("====================项目    <<" + n + ">>  重新签名失败,请检查DistributionSummary.plist文件====================")
     time_end = time.time()
-    print("====================项目耗时:", time_end-time_start)
+    print("====================项目耗时:", time_end - time_start)
     result = messagebox.showinfo("温馨提示", str(len(idList)) + "个推荐人id已全部打包完毕！")
     if result:
-        subprocess.call(["open", outputPath + "/所有的ipa包"])
+        subprocess.call(["open", output_path + "/所有的ipa包"])
         sys.exit()
+
+
+####################### 由于使用了CocoaPod进行代码管理，因此底下代码暂不使用 #############################
+#
+# # 项目路径，打包的输出路径，
+# def beginToPackage(projectpath, outputPath, idList):
+#     print("======打包正式开始======")
+#     # 项目记时开始
+#     time_start = time.time()
+#     # 清空项目  xcodebuild clean -project fmapp.xcodeproj -scheme rzjrapp -configuration Release
+#     clean_Command = "xcodebuild clean -project " + projectpath + " -scheme " + scheme + ' -configuration Release'
+#     print("执行清空项目命令: " + clean_Command)
+#     clean_Command_output = os.system(clean_Command)
+#
+# # 编译命令
+# # xcodebuild archive -project /Users/admin/ios/fmapp.xcodeproj -scheme rzjrapp -archivePath /Users/admin/Desktop/生成的ipa包/rzjrapp.xcarchive
+#     archivePath = outputPath + "/" + scheme + ".xcarchive"
+#     # 编译后app中的info.plist文件路径 rzjrapp scheme
+#     infoPath = archivePath + "/Products/Applications/" + scheme + ".app/Info.plist"
+#     # xcodebuild archive -sdk iphoneos11.1 -project
+#     buildCommand = "xcodebuild archive -project " + projectpath + " -scheme " + scheme + " -archivePath " + archivePath
+#
+#     # buildCommand = "xcodebuild -workspace "+projectpath+" -scheme " + scheme + " -configuration Release archive " \
+#     #   "-archivePath  "+outputPath+" -destination generic/platform=iOS"
+#
+#     print("执行编译命令: " + buildCommand)
+#     output = os.system(buildCommand)
+#
+#     if os.path.exists(outputPath + "/所有的ipa包"):
+#         shutil.rmtree(outputPath + "/所有的ipa包")  # 删除文件夹和文件夹里面的内容
+#     # 将所有的ipa包移动到统一的文件夹
+#     os.makedirs(outputPath + "/所有的ipa包")
+# ##  changeFileName("/Users/admin/Desktop/生成的ipa包/111", "/Users/admin/Desktop/生成的ipa包","/Users/admin/Desktop/生成的ipa包/111/Payload/rzjrapp.app/Info.plist")
+#
+#     for n in idList:
+#         # 修改plist文件
+#         pl = readPlist(infoPath)
+#         # 修改对应的业务数据
+#         pl["LocalUserID"] = n
+#         writePlist(pl, infoPath)
+#         # print("====================修改项目  <<" + n + ">>  plist成功,重新签名中====================")
+# # codesign -f -s "Shanghai Runrui Financial Service Co., Ltd." --entitlements /Users/admin/Desktop/生成的ipa包/DistributionSummary.plist /Users/admin/Desktop/生成的ipa包/rzjrapp.xcarchive/Products/Applications/rzjrapp.app
+#         # DistributionSummary
+#         # codeSignPlistPath = outputPath + "/ExportOptions.plist"
+#         # appPath = archivePath + "/Products/Applications/" + "rzjrapp" + ".app"  # scheme
+#         # archive_info_path = archivePath + "/Info.plist"
+#         # change_archive_info_path = readPlist(archive_info_path)
+#         # print("\n =========== change_archive_info_path:\n", change_archive_info_path)
+#         # print("\n =========== ApplicationProperties: ", change_archive_info_path["ApplicationProperties"])
+#         # change_archive_info_path["ApplicationProperties"]["SigningIdentity"] = "iPhone Developer: runqiu zhou(W6984V2KZV)"
+#         # writePlist(change_archive_info_path, archive_info_path)
+#         #
+#         # # codesignCommand = "codesign -f -s " + 'iPhone Distribution: ' + teamName + " --entitlements " + codeSignPlistPath + " " + appPath
+#         # # codesignCommand = "codesign -f -s " + '7946EE36C749575B27C31120C59191FE88061258' " --entitlements " + codeSignPlistPath + " " + appPath   W6984V2KZV)
+#         # codesignCommand = "codesign -f -s " + "iPhone Developer: runqiu zhou" + " --entitlements " + codeSignPlistPath + " " + appPath
+#         # print("执行签名命令: " + codesignCommand)
+#         # output = os.system(codesignCommand)
+#         output = 0
+#         if output == 0:
+#             # print("====================项目    <<" + n + ">>  重新签名成功,正在打包中====================")
+# #xcodebuild -exportArchive -archivePath /Users/admin/Desktop/生成的ipa包/rzjrapp.xcarchive -exportPath /Users/admin/Desktop/生成的ipa包/120 -exportOptionsPlist /Users/admin/Desktop/生成的ipa包/ExportOptions.plist
+#             # 导出ipa包需要的plist文件 ExportOptions.plist
+#             exportPlistPath = outputPath + "/" + "ExportOptions.plist"
+#             exportPath = outputPath + "/" + n
+#             exportCommand = "xcodebuild -exportArchive -archivePath " + archivePath + " -exportPath " + exportPath + " -exportOptionsPlist " + exportPlistPath + ' -allowProvisioningUpdates'
+#             print("执行打包命令: " + exportCommand)
+#             result = os.system(exportCommand)
+#             if result == 0:
+#                 print("====================项目    <<" + n + ">>  导出成功！！！====================")
+#                 # 将所有的ipa包重命名并移动到'所有的ipa包'文件夹
+#                 print("exportPath:", exportPath)
+#                 print("outputPath:", outputPath)
+#                 changeFileName(exportPath, outputPath, infoPath)
+# #                changeFileName("/Users/admin/Desktop/生成的ipa包/111", "/Users/admin/Desktop/生成的ipa包")
+#         else:
+#             print("====================项目    <<" + n + ">>  重新签名失败,请检查DistributionSummary.plist文件====================")
+#     time_end = time.time()
+#     print("====================项目耗时:", time_end-time_start)
+#     result = messagebox.showinfo("温馨提示", str(len(idList)) + "个推荐人id已全部打包完毕！")
+#     if result:
+#         subprocess.call(["open", outputPath + "/所有的ipa包"])
+#         sys.exit()
 
 
 
